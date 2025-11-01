@@ -137,3 +137,116 @@ tr:hover {
     padding: 0.75rem;
   }
 }
+
+/* Styling untuk tombol aksi di DataTable */
+.action-cell {
+  text-align: center;
+}
+.action-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.action-button.add {
+  background-color: var(--highlight-color);
+  color: #000;
+}
+.action-button.add:hover {
+  background-color: #a05ff9;
+}
+.action-button:disabled {
+  background-color: var(--secondary-color);
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* Bagian Reading List */
+.reading-list-section {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+.reading-list-section h2 {
+  color: var(--highlight-color);
+  margin-top: 0;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Menggunakan CSS Grid untuk layout reading list */
+.reading-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.list-item-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  gap: 1rem;
+}
+
+.list-item-cover {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.list-item-no-cover {
+  width: 50px;
+  height: 75px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.list-item-details {
+  flex-grow: 1;
+  overflow: hidden; /* Mencegah teks panjang merusak layout */
+}
+.list-item-title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Tampilkan ... jika judul terlalu panjang */
+}
+.list-item-author {
+  font-size: 0.85rem;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-button {
+  background-color: #cf6679; /* Warna merah/error */
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.remove-button:hover {
+  background-color: #b04f5f;
+}
+
+/* Penyesuaian judul h2 di DataTable */
+.table-container h2 {
+  padding: 0 1rem;
+  margin-top: 1.5rem;
+}
