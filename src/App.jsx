@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import DataTable from './components/DataTable';
-import './App.css'; // Import file CSS kita
+import './App.css'; // Import file CSS untuk dark theme
 
 function App() {
   // State untuk menampung istilah pencarian

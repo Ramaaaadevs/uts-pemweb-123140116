@@ -1,0 +1,139 @@
+/* untuk Global Styling & Dark Mode Theme */
+:root {
+  --bg-color: #121212;
+  --primary-color: #1e1e1e;
+  --secondary-color: #2a2a2a;
+  --font-color: #ffffff;
+  --highlight-color: #ff0000;
+  --border-color: #333;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 8px;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  line-height: 1.6;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main {
+  width: 100%;
+}
+
+/* Header Component */
+.app-header {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+.app-header h1 {
+  color: var(--highlight-color);
+  margin-bottom: 0.5rem;
+}
+
+/* SearchForm Component */
+.search-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.search-input {
+  flex-grow: 1; /* Input mengambil sisa ruang */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  color: var(--font-color);
+  border-radius: var(--border-radius);
+}
+.search-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--highlight-color);
+  color: #000;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-button:hover {
+  background-color: #efeeee;
+}
+
+/* DataTable Component */
+.table-container {
+  overflow-x: auto; /* Agar tabel bisa di-scroll di HP */
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+th {
+  background-color: var(--secondary-color);
+  font-weight: 700;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+tr:hover {
+  background-color: var(--secondary-color);
+}
+
+.book-cover {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+}
+.no-cover {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Status Messages */
+.loading-spinner, .no-results, .error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3rem;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+.error-message {
+  color: #cf6679; /* Warna error */
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+  }
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+  th, td {
+    padding: 0.75rem;
+  }
+}
