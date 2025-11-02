@@ -33,8 +33,7 @@ function App() {
     setSelectedBookKey(null);
   };
 
-  // --- LOGIKA READING LIST ---
-
+  //LOGIKA READING LIST
   // useEffect untuk MENYIMPAN ke localStorage setiap kali 'readingList' berubah
   useEffect(() => {
     localStorage.setItem('readingList', JSON.stringify(readingList));
@@ -66,7 +65,7 @@ function App() {
       setError(null);
       setBooks([]);
       try {
-        const response = await fetch(`https://openlibrary.org/search.json?q=${searchTerm}&limit=20`);
+        const response = await fetch(`https://openlibrary.org/search.json?q=${searchTerm}&limit=20&fields=key,title,author_name,first_publish_year,cover_i,subject`);
         if (!response.ok) {
           throw new Error('Respon jaringan tidak berhasil');
         }
