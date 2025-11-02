@@ -1,3 +1,7 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
 /* untuk Global Styling & Dark Mode Theme */
 :root {
   --bg-color: #121212;
@@ -10,8 +14,6 @@
   --border-radius: 8px;
 }
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 body {
   margin: 0;
@@ -73,7 +75,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .search-button:hover {
-  background-color: #efeeee;
+  background-color: #ffffff;
 }
 
 /* DataTable Component */
@@ -141,6 +143,8 @@ tr:hover {
 /* Styling untuk tombol aksi di DataTable */
 .action-cell {
   text-align: center;
+  /* Kita beri lebar tetap untuk sel-nya agar tombol bisa seragam */
+  width: 120px; 
 }
 .action-button {
   padding: 0.5rem 1rem;
@@ -156,7 +160,7 @@ tr:hover {
   color: #000;
 }
 .action-button.add:hover {
-  background-color: #a05ff9;
+  background-color: #ffffff;
 }
 .action-button:disabled {
   background-color: var(--secondary-color);
@@ -264,7 +268,7 @@ tr:hover {
 
 /* Filter Input (di atas tabel) */
 .filter-input {
-  width: calc(100% - 2rem); /* Sesuaikan padding .table-container */
+  width: calc(100% - 2rem);
   margin: 0.5rem 1rem 1rem 1rem; /* Beri jarak */
   padding: 0.75rem 1rem;
   font-size: 1rem;
@@ -320,6 +324,7 @@ tr:hover {
   margin-top: 1.5rem;
   border-top: 1px solid var(--border-color);
   padding-top: 1rem;
+  text-align: justify;
 }
 .detail-section h3 {
   margin-bottom: 0.5rem;
@@ -338,4 +343,24 @@ tr:hover {
   padding: 0.25rem 0.75rem;
   border-radius: 20px; /* Bentuk kapsul */
   font-size: 0.9rem;
+}
+/*tambahan header untuk logo*/
+/*Kontainer untuk logo + judul */
+.header-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Membuat grup logo+teks tetap di tengah (Desktop) */
+  gap: 1.5rem; /* Jarak antara logo dan blok teks */
+}
+
+/* Style untuk logo */
+.app-logo {
+  height: 150px; /* Atur tinggi logo kamu */
+  width: 150px;  /* Atur lebar logo kamu */
+  object-fit: contain; /* 'contain' agar gambar tidak gepeng */
+}
+
+/* Style untuk blok teks di samping logo */
+.header-text {
+  text-align: left; /* Paksa teks rata kiri (melawan text-align: center) */
 }
