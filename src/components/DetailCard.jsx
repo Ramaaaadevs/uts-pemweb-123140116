@@ -55,12 +55,12 @@ function DetailCard({ bookKey, onClose }) {
   };
 
   return (
-    // Modal Overlay (latar belakang gelap)
-    <div className="modal-overlay" onClick={onClose}>
-      {/* Modal Content (kotak putih di tengah) */}
-      {/* e.stopPropagation() mencegah modal tertutup saat diklik bagian putihnya */}
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close-btn" onClick={onClose}>&times;</button>
+    // popup Overlay (latar belakang gelap)
+    <div className="popup-overlay" onClick={onClose}>
+      {/* popup Content (kotak putih di tengah) */}
+      {/* e.stopPropagation() mencegah popup tertutup saat diklik bagian putihnya */}
+      <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+        <button className="popup-close-btn" onClick={onClose}>&times;</button>
         
         {isLoading && <div className="loading-spinner">Memuat detail...</div>}
         {error && <div className="error-message">{error}</div>}

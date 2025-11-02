@@ -279,8 +279,8 @@ tr:hover {
   border-radius: var(--border-radius);
 }
 
-/* Modal Detail */
-.modal-overlay {
+/* popup Detail */
+.popup-overlay {
   position: fixed; /* Tetap di layar */
   top: 0;
   left: 0;
@@ -292,7 +292,7 @@ tr:hover {
   z-index: 1000; /* Paling depan */
 }
 
-.modal-content {
+.popup-content {
   background-color: var(--primary-color);
   padding: 2rem;
   border-radius: var(--border-radius);
@@ -304,7 +304,7 @@ tr:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-.modal-close-btn {
+.popup-close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -316,7 +316,7 @@ tr:hover {
   line-height: 1;
 }
 
-.modal-content h2 {
+.popup-content h2 {
   color: var(--highlight-title);
   margin-top: 0;
 }

@@ -1,16 +1,16 @@
 # UTS Front-End Web: LibSearch Aplikasi Pencarian Buku
 
-**Nama:** `Diwan Ramadhani Dwi Putra`
-**NIM:** `123140116`
-**Link Deployment Vercel:** **https://libsearch-pencarianbuku.vercel.app/**
+* **Nama:** `Diwan Ramadhani Dwi Putra`
+* **NIM:** `123140116`
+* **Link Deployment Vercel:** **https://libsearch-pencarianbuku.vercel.app/**
 
 ---
 
 ## 📖 Deskripsi Project
 
-Aplikasi ini adalah sebuah perpustakaan digital sederhana yang dibuat sebagai pemenuhan Ujian Tengah Semester (UTS) mata kuliah Pemrograman Web. Aplikasi ini memungkinkan pengguna untuk mencari buku berdasarkan judul atau penulis menggunakan **Open Library API**.
+Aplikasi ini adalah sebuah perpustakaan digital sederhana yang dibuat untuk project Ujian Tengah Semester (UTS) mata kuliah Pemrograman Web Institut Teknologi Sumatera. Aplikasi ini memungkinkan pengguna untuk mencari buku berdasarkan judul atau penulis menggunakan **Open Library API**.
 
-Pengguna juga dapat melihat detail buku (deskripsi & subject), menambahkan buku favorit ke "Reading List" pribadi (disimpan di `localStorage`), serta mengganti tema tampilan antara mode terang (light) dan gelap (dark).
+Pengguna dapat melihat detail buku, menambahkan buku favorit ke "Reading List" pribadi (disimpan di `localStorage`).
 
 ## ✨ Fitur Utama
 
@@ -18,8 +18,7 @@ Pengguna juga dapat melihat detail buku (deskripsi & subject), menambahkan buku 
 * **Tabel Hasil**: Menampilkan hasil pencarian dalam bentuk tabel yang mencakup cover, judul, penulis, dan tahun terbit.
 * **Reading List**: Menambah dan menghapus buku dari daftar bacaan pribadi. Data ini tidak akan hilang meskipun browser ditutup (`localStorage`).
 * **Filter Subject**: Memfilter hasil pencarian yang tampil di tabel berdasarkan *subject* atau kategori buku.
-* **Detail Buku**: Menampilkan modal (pop-up) dengan informasi mendetail tentang buku (deskripsi & subject) yang diambil dari endpoint API berbeda.
-* **Toggle Tema (Dark/Light Mode)**: Mengganti tema tampilan secara instan, dan pilihan tema akan tersimpan di `localStorage` untuk kunjungan berikutnya.
+* **Detail Buku**: Menampilkan Pop-up dengan informasi mendetail tentang buku (deskripsi & subject) yang diambil dari endpoint API berbeda.
 * **Desain Responsif**: Tampilan aplikasi sudah disesuaikan untuk perangkat mobile dan desktop.
 
 ---
@@ -65,11 +64,11 @@ Untuk menjalankan project ini di komputermu, ikuti langkah-langkah berikut:
 
 ## 📸 Screenshot Aplikasi
 
-**1. Tampilan Utama (Mode Gelap/Terang)**
-> *[]*
+**1. Tampilan Utama**
+> ![Tampilan Utama Aplikasi](./public/Interface.png)
 
 **2. Tampilan Hasil Pencarian & Filter**
-> *[]*
+> ![Tampilan Hasil Pencarian](./public/Search_Filter.png)
 
-**3. Tampilan Modal Detail Buku**
-> *[]*
+**3. Tampilan Pop-up Detail Buku**
+> ![Tampilan Modal Detail](./public/Deskripsi)
