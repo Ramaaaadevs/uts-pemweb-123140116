@@ -71,4 +71,4 @@ Untuk menjalankan project ini di komputermu, ikuti langkah-langkah berikut:
 > ![Tampilan Hasil Pencarian](./public/Search_Filter.png)
 
 **3. Tampilan Pop-up Detail Buku**
-> ![Tampilan Modal Detail](./public/Deskripsi)
+> ![Tampilan Modal Detail](./public/Deskripsi.png)
