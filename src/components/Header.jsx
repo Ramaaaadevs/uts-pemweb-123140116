@@ -5,7 +5,7 @@ function Header({ theme, toggleTheme }) {
     <header className="app-header">
       <div className="header-title-container">
         <img 
-          src="/public/logo_trans.png"
+          src="logo_trans.png"
           alt="Logo Aplikasi" 
           className="app-logo" 
         />
